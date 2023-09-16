@@ -1,0 +1,20 @@
+// Base
+@import 'base/vars';
+@import 'base/mixins';
+@import 'base/fonts';
+@import 'base/reset';
+@import 'base/utils';
+@import 'base/animations';
+
+//Blocks
+@import 'blocks/nav';
+@import 'blocks/text';
+@import 'blocks/btn';
+
+// Parts
+@import 'parts/header';
+@import 'parts/first';
+@import 'parts/decisions';
+@import 'parts/about-company';
+@import 'parts/stages';
+@import 'parts/ask-a-question';

@@ -1,0 +1,89 @@
+.stages {
+	padding: 100px 0;
+	background: url(../images/stages-bg.jpg);
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: cover;
+	position: relative;
+	&::after {
+		content: '';
+		position: absolute;
+		background: url(../images/stages-decor-bg.png);
+		background-repeat: no-repeat;
+		width: 526px;
+		height: 526px;
+		bottom: 0;
+		right: 0;
+	}
+	&__title {
+		color: #fff;
+		font-size: 28px;
+		font-weight: 700;
+		line-height: 36px;
+		text-align: center;
+		max-width: 788px;
+		margin: 0 auto;
+		margin-bottom: 20px;
+	}
+	&__text {
+		color: #e3e9ef;
+		line-height: 20px;
+		text-align: center;
+		width: 788px;
+		margin: 0 auto;
+		margin-bottom: 60px;
+	}
+	&__grid {
+		display: grid;
+		grid-template-columns: repeat(4, 1fr);
+		grid-template-rows: repeat(2, 1fr);
+		position: relative;
+		z-index: 5;
+	}
+	&__stage {
+		border: 1px solid #2f3437;
+	}
+	&__stage + &__stage {
+		margin-left: -1px;
+		margin-top: -1px;
+	}
+	&__stage-wrap {
+		display: flex;
+		justify-content: space-between;
+		margin-bottom: 20px;
+	}
+	&__stage-number {
+		font-size: 32px;
+		font-weight: 700;
+		line-height: 40px;
+		opacity: 0.7;
+		transition: color 0.2s ease-out;
+	}
+	&__stage-desc {
+		line-height: 20px;
+	}
+	&__scale {
+		height: 100%;
+		width: 100%;
+		padding: 30px 25px;
+		transition: all 0.3s ease-out;
+		path {
+			transition: stroke 0.2s ease-out;
+		}
+		&:first-child {
+			margin-top: -1px;
+			margin-left: -1px;
+		}
+		&:hover path {
+			stroke: #017970;
+		}
+		&:hover .stages__stage-number {
+			color: #017970;
+		}
+		&:hover {
+			color: $text-color;
+			background: #fff;
+			transform: scale(1.04);
+		}
+	}
+}

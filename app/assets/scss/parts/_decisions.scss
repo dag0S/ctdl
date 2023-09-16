@@ -1,0 +1,90 @@
+.decisions {
+	padding: 100px 0;
+	&__grid {
+		display: grid;
+		grid-template-columns: 320px auto;
+		grid-template-rows: 550px;
+		gap: 20px;
+	}
+	&__block-left {
+		background: url(../images/decisions-bg-left.jpg);
+		background-repeat: no-repeat;
+		padding: 60px 30px;
+		border-radius: 5px;
+		position: relative;
+		&::after {
+			content: '';
+			position: absolute;
+			bottom: 0;
+			right: 0;
+			background: url(../images/decisions-bg-decor.png);
+			background-repeat: no-repeat;
+			height: 174px;
+			width: 174px;
+		}
+	}
+	&__title {
+		color: #fff;
+		font-size: 22px;
+		font-weight: 700;
+		line-height: 28px;
+		margin-bottom: 40px;
+	}
+	&__block-right {
+		background: url(../images/decisions-bg-right.jpg);
+		background-repeat: no-repeat;
+		padding: 60px 30px;
+		border-radius: 5px;
+	}
+	&__tabs {
+		display: flex;
+		gap: 10px;
+		margin-bottom: 42px;
+	}
+	&__tab {
+		border: 1px solid rgba(255, 255, 255, 0.2);
+		box-shadow: 0px 15px 50px 0px rgba(0, 0, 0, 0.1);
+
+		color: #fff;
+		font-weight: 700;
+		line-height: 20px;
+
+		padding: 20px 13px;
+		border-radius: 4px;
+
+		flex-basis: 180px;
+
+		cursor: pointer;
+		&--active {
+			background: $accent-color;
+			border: none;
+		}
+	}
+	&__content {
+		display: flex;
+		gap: 40px;
+
+		padding: 50px 30px;
+
+		border-radius: 5px;
+		background: rgba(255, 255, 255, 0.02);
+	}
+	&__content-img {
+		object-fit: contain;
+		align-self: start;
+	}
+	&__content-title {
+		font-size: 20px;
+		font-weight: 700;
+		line-height: 28px;
+		color: #fff;
+		margin-bottom: 20px;
+	}
+	&__content-desc {
+		line-height: 20px;
+		color: $muted-color;
+	}
+	&__btn {
+		box-shadow: 0px 5px 20px 0px rgba(0, 0, 0, 0.05);
+	}
+}

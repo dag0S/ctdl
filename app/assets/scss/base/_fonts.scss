@@ -1,0 +1,47 @@
+@font-face {
+  font-family: 'RF Tone';
+  src: url('../fonts/RFTone-ExtraBold.eot');
+  src: local('../fonts/RF Tone ExtraBold'), local('../fonts/RFTone-ExtraBold'),
+      url('../fonts/RFTone-ExtraBold.eot?#iefix') format('embedded-opentype'),
+      url('../fonts/RFTone-ExtraBold.woff2') format('woff2'),
+      url('../fonts/RFTone-ExtraBold.woff') format('woff'),
+      url('../fonts/RFTone-ExtraBold.ttf') format('truetype');
+  font-weight: 800;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'RF Tone';
+  src: url('../fonts/RFTone-Regular.eot');
+  src: local('../fonts/RF Tone Regular'), local('../fonts/RFTone-Regular'),
+      url('../fonts/RFTone-Regular.eot?#iefix') format('embedded-opentype'),
+      url('../fonts/RFTone-Regular.woff2') format('woff2'),
+      url('../fonts/RFTone-Regular.woff') format('woff'),
+      url('../fonts/RFTone-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'RF Tone';
+  src: url('../fonts/RFTone-Bold.eot');
+  src: local('../fonts/RF Tone Bold'), local('../fonts/RFTone-Bold'),
+      url('../fonts/RFTone-Bold.eot?#iefix') format('embedded-opentype'),
+      url('../fonts/RFTone-Bold.woff2') format('woff2'),
+      url('../fonts/RFTone-Bold.woff') format('woff'),
+      url('../fonts/RFTone-Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'RF Tone';
+  src: url('../fonts/RFTone-SemiBold.eot');
+  src: local('../fonts/RF Tone SemiBold'), local('../fonts/RFTone-SemiBold'),
+      url('../fonts/RFTone-SemiBold.eot?#iefix') format('embedded-opentype'),
+      url('../fonts/RFTone-SemiBold.woff2') format('woff2'),
+      url('../fonts/RFTone-SemiBold.woff') format('woff'),
+      url('../fonts/RFTone-SemiBold.ttf') format('truetype');
+  font-weight: 600;
+  font-style: normal;
+}

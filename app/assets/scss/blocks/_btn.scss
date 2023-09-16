@@ -1,0 +1,11 @@
+.btn {
+	padding: 16px 30px;
+	border-radius: 5px;
+	background: #017970;
+	display: inline-block;
+	transition: opacity 0.2s ease-out;
+	&:hover {
+		color: $main-color;
+		opacity: 0.9;
+	}
+}

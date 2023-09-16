@@ -1,0 +1,12 @@
+<svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="Group">
+<g id="Group_2">
+<path id="Path" d="M16 10H6" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Path_2" fill-rule="evenodd" clip-rule="evenodd" d="M40 14H18C16.896 14 16 13.104 16 12V8C16 6.896 16.896 6 18 6H40C41.104 6 42 6.896 42 8V12C42 13.104 41.104 14 40 14Z" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Path_3" d="M16 24H6" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Path_4" fill-rule="evenodd" clip-rule="evenodd" d="M40 28H18C16.896 28 16 27.104 16 26V22C16 20.896 16.896 20 18 20H40C41.104 20 42 20.896 42 22V26C42 27.104 41.104 28 40 28Z" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Path_5" fill-rule="evenodd" clip-rule="evenodd" d="M40 42H18C16.896 42 16 41.104 16 40V36C16 34.896 16.896 34 18 34H40C41.104 34 42 34.896 42 36V40C42 41.104 41.104 42 40 42Z" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Path_6" d="M16 38H8C6.896 38 6 37.104 6 36V6" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+</g>
+</svg>

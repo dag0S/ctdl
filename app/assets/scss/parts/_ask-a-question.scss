@@ -1,0 +1,35 @@
+.ask-a-question {
+	padding: 100px 0;
+	&__wrap {
+		background: url('../images/ask-a-question-bg.jpg');
+		background-repeat: no-repeat;
+		background-position: center center;
+		background-size: cover;
+		padding: 64px 80px;
+		border-radius: 10px;
+
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+	&__wrap-text {
+		margin-right: 15px;
+	}
+	&__title {
+		font-size: 28px;
+		font-weight: 700;
+		line-height: 36px;
+		color: #fff;
+		margin-bottom: 10px;
+	}
+	&__btn {
+		color: #017970;
+		background: $main-color;
+		padding: 20px 40px;
+    font-weight: 700;
+    line-height: 20px;
+		&:hover {
+			color: #017970;
+		}
+	}
+}
