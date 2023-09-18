@@ -1,0 +1,84 @@
+.contacts {
+	background: $main-color;
+	padding: 100px 0;
+	color: #111;
+	&__title {
+		font-size: 28px;
+		font-weight: 700;
+		line-height: 36px;
+		margin-bottom: 30px;
+	}
+	&__maps {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    margin-bottom: 114px;
+	}
+	&__map {
+		padding: 30px;
+		border-radius: 5px;
+		background: #fff;
+		box-shadow: 0px 5px 20px 0px rgba(0, 0, 0, 0.05);
+	}
+	&__map-map {
+		height: 300px;
+		width: 100%;
+		background: #8a8a8a;
+		border-radius: 5px;
+		margin-bottom: 20px;
+	}
+	&__map-city-name {
+		font-size: 20px;
+		font-weight: 700;
+		line-height: 28px;
+		margin-bottom: 20px;
+	}
+	&__map-phone,
+	&__map-address {
+		font-size: 18px;
+		line-height: 26px;
+		font-weight: 600;
+		position: relative;
+		padding-left: 34px;
+		&::before {
+			content: '';
+			position: absolute;
+			top: -4px;
+			left: 0;
+
+			background-repeat: no-repeat;
+			height: 24px;
+			width: 24px;
+		}
+	}
+	&__map-phone {
+    display: inline-block;
+		margin-bottom: 20px;
+		&::before {
+			background: url(../images/contacts-phone.svg);
+		}
+	}
+	&__map-address {
+		&::before {
+			background: url(../images/contacts-map.svg);
+      top: 0;
+		}
+	}
+  &__form {
+    background: #fff;
+    background-repeat: 10px;
+    box-shadow: 0px 15px 50px 0px rgba(0, 0, 0, 0.10);
+    padding: 60px;
+  }
+  &__form-title {
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 36px;
+    margin-bottom: 40px;
+  }
+  &__form-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+}
