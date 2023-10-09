@@ -54,6 +54,8 @@
 
 		flex-basis: 180px;
 
+		transition: all 0.3s ease-in;
+
 		cursor: pointer;
 		&--active {
 			background: $accent-color;
@@ -68,6 +70,7 @@
 
 		border-radius: 5px;
 		background: rgba(255, 255, 255, 0.02);
+
 	}
 	&__content-img {
 		object-fit: contain;
@@ -86,5 +89,11 @@
 	}
 	&__btn {
 		box-shadow: 0px 5px 20px 0px rgba(0, 0, 0, 0.05);
+	}
+	&__content-text {
+		display: none;
+		&--active {
+			display: block;
+		}
 	}
 }

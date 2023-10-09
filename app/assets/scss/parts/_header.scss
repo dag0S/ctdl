@@ -1,7 +1,7 @@
 .header {
 	background: rgba($dark-color, 0.1);
   padding: 23px 0;
-  position: fixed;
+  position: absolute;
   width: 100%;
   z-index: 10;
   &__row {
@@ -30,4 +30,9 @@
     font-size: 20px;
     font-weight: 600;
   }
+}
+
+.sticky {
+  position: fixed;
+  background: rgba($dark-color, 0.3);
 }

@@ -242,10 +242,32 @@ input:focus, area:focus {
     border: 1px solid #cfd1d3;
 }
 
+.form__input-data textarea {
+    border: none;
+    width: 100%;
+    min-height: 175px;
+    resize: none;
+}
+
+.form__input-data textarea:focus {
+    outline: none;
+}
+
+.form__input-data textarea:not(:-moz-placeholder-shown) ~ label {
+    transform: translateY(-15px);
+    font-size: 12px;
+    line-height: 16px;
+}
+
+.form__input-data textarea:focus ~ label,
+.form__input-data textarea:not(:placeholder-shown) ~ label {
+    transform: translateY(-15px);
+    font-size: 12px;
+    line-height: 16px;
+}
+
 .form__input-data input:focus ~ label,
-.form__input-data .textarea textarea:focus ~ label,
-.form__input-data input:valid ~ label,
-.form__input-data .textarea textarea:valid ~ label {
+.form__input-data input:valid ~ label {
     transform: translateY(-8px);
     font-size: 12px;
     line-height: 16px;
@@ -271,6 +293,12 @@ input:focus, area:focus {
     line-height: 20px;
     color: #63696f;
     transition: all 0.3s ease;
+}
+
+.form__label--textarea {
+    transform: translateY(0);
+    bottom: 0;
+    top: 20px;
 }
 
 .form__btn {
@@ -338,7 +366,7 @@ input:focus, area:focus {
 .header {
     background: rgba(0, 0, 0, 0.1);
     padding: 23px 0;
-    position: fixed;
+    position: absolute;
     width: 100%;
     z-index: 10;
 }
@@ -372,6 +400,11 @@ input:focus, area:focus {
 .header__tel {
     font-size: 20px;
     font-weight: 600;
+}
+
+.sticky {
+    position: fixed;
+    background: rgba(0, 0, 0, 0.3);
 }
 
 .first {
@@ -531,6 +564,7 @@ input:focus, area:focus {
     padding: 20px 13px;
     border-radius: 4px;
     flex-basis: 180px;
+    transition: all 0.3s ease-in;
     cursor: pointer;
 }
 
@@ -568,6 +602,14 @@ input:focus, area:focus {
 
 .decisions__btn {
     box-shadow: 0px 5px 20px 0px rgba(0, 0, 0, 0.05);
+}
+
+.decisions__content-text {
+    display: none;
+}
+
+.decisions__content-text--active {
+    display: block;
 }
 
 .about-company {

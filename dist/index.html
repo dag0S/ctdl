@@ -5,22 +5,25 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Главная</title>
 		<link rel="stylesheet" href="assets/css/style.min.css" />
+		<script defer src="assets/js/main.js"></script>
 	</head>
 	<body>
 		<div class="wrapper">
 			<header class="header">
 				<div class="container">
 					<div class="header__row">
-						<a class="header__logo" href="#">
+						<a class="header__logo" href="#first">
 							<img src="assets/images/logo.svg" alt="" />
 						</a>
 						<nav class="nav">
 							<ul class="nav__list">
-								<li><a href="#">О компании</a></li>
-								<li><a href="#">Решения</a></li>
-								<li><a href="#">Законодательство</a></li>
-								<li><a href="#">Карьера</a></li>
-								<li><a href="#">Контакты</a></li>
+								<li><a class="nav__link" href="#first">О компании</a></li>
+								<li><a class="nav__link" href="#decisions">Решения</a></li>
+								<li>
+									<a class="nav__link" href="#about-company">Законодательство</a>
+								</li>
+								<li><a class="nav__link" href="#stages">Карьера</a></li>
+								<li><a class="nav__link" href="#contacts">Контакты</a></li>
 							</ul>
 						</nav>
 						<p class="header__language">RU</p>
@@ -30,7 +33,7 @@
 				</div>
 			</header>
 			<main class="main">
-<section class="first">
+<section class="first" id="first">
 	<div class="container">
 		<div class="first__top">
 			<h1 class="first__title">Компания «Цитадель»</h1>
@@ -60,7 +63,7 @@
 		</div>
 	</div>
 </section>
-<section class="decisions">
+<section class="decisions" id="decisions">
 	<div class="container">
 		<div class="decisions__grid">
 			<div class="decisions__block-left">
@@ -72,12 +75,14 @@
 			</div>
 			<div class="decisions__block-right">
 				<div class="decisions__tabs">
-					<p class="decisions__tab decisions__tab--active">
+					<p class="decisions__tab decisions__tab--active" data-tab="1">
 						АПК «ИС БД ОРМ «Январь-374»
 					</p>
-					<p class="decisions__tab">АПК «ИС БД ОРМ «Январь-ОРИ»</p>
-					<p class="decisions__tab">АПК «ТС ОРМ «СОРМович»</p>
-					<p class="decisions__tab">АПК «СОРМович-<br />Агрегатор»</p>
+					<p class="decisions__tab" data-tab="2">АПК «ИС БД ОРМ «Январь-ОРИ»</p>
+					<p class="decisions__tab" data-tab="3">АПК «ТС ОРМ «СОРМович»</p>
+					<p class="decisions__tab" data-tab="4">
+						АПК «СОРМович-<br />Агрегатор»
+					</p>
 				</div>
 				<div class="decisions__contents">
 					<div class="decisions__content">
@@ -86,20 +91,61 @@
 							src="assets/images/sormovich.svg"
 							alt=""
 						/>
-						<div class="decisions__content-text">
-							<h3 class="decisions__content-title">
-								АПК «ИС БД ОРМ «Январь-374»
-							</h3>
-							<p class="decisions__content-desc">
-								Входит в состав комплексного решения, предназначенного для
-								реализации требований Федерального закона №374-ФЗ от 6 июля
-								2016г. во всех видах сетей операторов связи. Осуществляет
-								накопление и хранение содержимого соединений в соответствии с
-								требованиями законодательства и предоставляет возможности
-								гибкого горизонтального масштабирования. ПО решения включено в
-								Единый реестр российских программ для электронных вычислительных
-								машин и баз данных.
-							</p>
+						<div class="decisions__content-wrap">
+							<div
+								class="decisions__content-text decisions__content-text--1 decisions__content-text--active"
+							>
+								<h3 class="decisions__content-title">
+									АПК «ИС БД ОРМ «Январь-374»
+								</h3>
+								<p class="decisions__content-desc">
+									Входит в состав комплексного решения, предназначенного для
+									реализации требований Федерального закона №374-ФЗ от 6 июля
+									2016г. во всех видах сетей операторов связи. Осуществляет
+									накопление и хранение содержимого соединений в соответствии с
+									требованиями законодательства и предоставляет возможности
+									гибкого горизонтального масштабирования. ПО решения включено в
+									Единый реестр российских программ для электронных
+									вычислительных машин и баз данных.
+								</p>
+							</div>
+							<div class="decisions__content-text decisions__content-text--2">
+								<h3 class="decisions__content-title">
+									АПК «ИС БД ОРМ «Январь-ОРИ»
+								</h3>
+								<p class="decisions__content-desc">
+									Aperiam quaerat vel alias explicabo est et perspiciatis,
+									libero, id autem repudiandae aut corporis dignissimos, modi
+									quis eum placeat velit perferendis totam qui molestiae? Minus
+									soluta officiis cupiditate ipsa repellendus repudiandae
+									consectetur fugiat dolorum. Nostrum.
+								</p>
+							</div>
+							<div class="decisions__content-text decisions__content-text--3">
+								<h3 class="decisions__content-title">АПК «ТС ОРМ «СОРМович»</h3>
+								<p class="decisions__content-desc">
+									Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+									Dignissimos velit accusamus eligendi expedita ab doloremque
+									iure omnis totam et unde quis numquam nihil maiores aperiam
+									nisi modi, distinctio recusandae fugiat. Est animi ipsa iure
+									reiciendis.
+								</p>
+							</div>
+							<div class="decisions__content-text decisions__content-text--4">
+								<h3 class="decisions__content-title">
+									АПК «СОРМович-Агрегатор»
+								</h3>
+								<p class="decisions__content-desc">
+									Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+									Dignissimos velit accusamus eligendi expedita ab doloremque
+									iure omnis totam et unde quis numquam nihil maiores aperiam
+									nisi modi, distinctio recusandae fugiat. Est animi ipsa iure
+									reiciendis. Входит в состав комплексного решения,
+									предназначенного для реализации требований Федерального закона
+									№374-ФЗ от 6 июля 2016г. Lorem ipsum, dolor sit amet
+									consectetur adipisicing elit.
+								</p>
+							</div>
 						</div>
 					</div>
 				</div>
@@ -107,7 +153,7 @@
 		</div>
 	</div>
 </section>
-<section class="about-company">
+<section class="about-company" id="about-company">
 	<div class="container">
 		<div class="about-company__flex">
 			<div class="about-company__wrap-text">
@@ -131,7 +177,7 @@
 		</div>
 	</div>
 </section>
-<section class="stages">
+<section class="stages" id="stages">
 	<div class="container">
 		<h2 class="stages__title">
 			Четкое понимание дальнейших шагов - залог успешного внедрения проекта
@@ -764,7 +810,7 @@
 		</div>
 	</div>
 </section>
-<section class="contacts">
+<section class="contacts" id="contacts">
 	<div class="container">
 		<h2 class="contacts__title">Контакты</h2>
 		<div class="contacts__maps">
@@ -816,8 +862,10 @@
 						<label class="form__label" for="">Компания *</label>
 					</div>
 					<div class="form__input-data form__textarea-data">
-						<textarea class="form__input"></textarea>
-						<label class="form__label" for="">Введите комментарий</label>
+						<textarea class="form__input" style="width: 100%" placeholder=" "></textarea>
+						<label class="form__label form__label--textarea" for=""
+							>Введите комментарий</label
+						>
 					</div>
 					<div class="form__checkbox-wrap">
 						<input
@@ -831,7 +879,7 @@
 						<p class="form__checkbox-text">
 							Я согласен на обработку персональных данных и
 							<a href="#">Политику обработки персональных данных</a>
-						 </p>
+						</p>
 					</div>
 					<button class="form__btn btn">Отправить</button>
 				</div>

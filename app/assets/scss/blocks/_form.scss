@@ -2,10 +2,26 @@
 	&__input-data {
 		position: relative;
 		border: 1px solid #cfd1d3;
+
+		textarea {
+			border: none;
+			width: 100%;
+			min-height: 175px;
+			resize: none;
+			&:focus {
+				outline: none;
+			}
+		}
+
+		textarea:focus ~ label,
+		textarea:not(:placeholder-shown) ~ label {
+			transform: translateY(-15px);
+			font-size: 12px;
+			line-height: 16px;
+		}
+
 		input:focus ~ label,
-		.textarea textarea:focus ~ label,
-		input:valid ~ label,
-		.textarea textarea:valid ~ label {
+		input:valid ~ label {
 			transform: translateY(-8px);
 			font-size: 12px;
 			line-height: 16px;
@@ -33,11 +49,17 @@
 		color: #63696f;
 
 		transition: all 0.3s ease;
+
+		&--textarea {
+			transform: translateY(0);
+			bottom: 0;
+			top: 20px;
+		}
 	}
 	&__btn {
 		color: #fff;
 		max-width: 200px;
-		padding: 20px 58px;	
+		padding: 20px 58px;
 		grid-row: 6 / 7;
 	}
 	&__checkbox-wrap {
